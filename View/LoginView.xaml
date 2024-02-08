@@ -124,8 +124,8 @@
                             Grid.Row="2"
                             Orientation="Vertical"
                             Margin="0,35,0,0">
-                    <Image Source=" "
-                           Width="100" Height="100"/>
+                    <Image Source="D:\repos\LoginForm\Images\logo2.png"
+                           Width="130" Height="100"/>
                     
                     <TextBlock Text="MEDIC BOX"
                                Foreground="DeepPink"
@@ -133,7 +133,7 @@
                                FontWeight="Medium"
                                FontFamily="Bahnschrift SemiBold Condensed"
                                HorizontalAlignment="Center"
-                               Margin="-10,-140,0,0"/>
+                               Margin="0,-160,0,0"/>
 
                     <TextBlock Text="Выберите подходящее лекарство из нашего каталога."                           
                                Foreground="LemonChiffon"
@@ -155,17 +155,49 @@
                              FontSize="20"
                              FontFamily="Century Gothic"
                              FontWeight="Medium"
-                             Background="Transparent"
                              Foreground="White"
                              CaretBrush="LightGray"
                              BorderBrush="PaleVioletRed"
                              BorderThickness="0,0,0,3"
                              Height="28"
                              VerticalContentAlignment="Center"
-                             Margin="0,5,0,0">
+                             Margin="0,5,0,0"
+                             Padding="25,0,0,0">
                         <TextBox.Background>
-                            <ImageBrush ImageSource=""/>
+                            <ImageBrush ImageSource="D:\repos\LoginForm\Images\userlogo.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"/>
                         </TextBox.Background>
+                        
+                    </TextBox>
+
+                    <TextBlock Text="Пароль"
+                               Foreground="GhostWhite"
+                               FontSize="16"
+                               FontWeight="Medium"
+                               Margin="0,50,0,0"
+                               FontFamily="Bahnschrift SemiCondensed"/>
+
+                    <PasswordBox x:Name="txtPass"
+                             FontSize="20"
+                             FontFamily="Century Gothic"
+                             FontWeight="Medium"
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="PaleVioletRed"
+                             BorderThickness="0,0,0,3"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="40,0,0,0">
+                        <PasswordBox.Background>
+                            <ImageBrush ImageSource="D:\repos\LoginForm\Images\key.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"/>
+                        </PasswordBox.Background>
+
+                    </PasswordBox>
+
                 </StackPanel>
             </Grid>
         
